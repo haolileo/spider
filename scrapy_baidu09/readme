@@ -1,0 +1,13 @@
+1、创建爬虫的项目
+scrapy startproject xxx
+注意：项目的名称不能用数字开头，也不能包含中文
+
+2、创建爬虫文件
+要在spiders文件夹中创建爬虫文件
+scrapy genspider xxx url
+eg:scrapy genspider baidu www.baidu.com
+
+3、运行爬虫代码
+scrapy crawl xxx
+eg:scrapy crawl baidu
+注意：如果运行爬取不成功需要在原有的settings.py里去将robots协议关掉
